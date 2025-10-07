@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .earth{
+    background-color:blue;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:auto;
+    position: absolute;
+    top:40%;
+    left:40%;
+    
+    }
+    .universe{
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    position: relative;
+    }
+    .moon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Makes it a circle */
+    background-color: #f0f0f0; /* Light color for the moon */
+    position: relative; /* For positioning purposes if needed */
+    box-shadow:
+        0 0 15px 5px rgba(255, 255, 255, 0.7), /* Inner glow */
+        0 0 30px 10px rgba(255, 255, 255, 0.5), /* Outer glow */
+        0 0 60px 20px rgba(255, 255, 255, 0.3); /* Further diffused glow */
+    position: absolute;
+    top:50%;
+    left:50%;
+    animation-name:moon-animation;
+    animation-duration: 6s;
+    animation-delay: infinite;
+    animation-fill-mode: forwards;
+    }
+
+   @keyframes moon-animation{
+    0%{
+        transform: rotate(0deg) translateX(380px) rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg) translateX(380px) rotate(-180deg);
+    }
+    100%{
+        transform: rotate(360deg) translateX(380px) rotate(-360deg);
+    }
+   }
+
+    </style>
+</head>
+<body>
+<div class="universe">
+<div class="earth"></div>
+<div class="moon"></div>
+</div>
+</body>
+</html>

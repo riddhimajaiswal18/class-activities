@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .card{
+    width: 500px;
+    padding: 14px;
+    background-color: white;
+    margin: 180px auto;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    }
+    img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+    .info{
+    padding: 18px;
+    margin-top: 27px;
+    }
+    .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 8px;
+    }
+    .contact{
+    margin: 8px;
+    }
+    .portfolio{
+    margin: 8px;
+    }
+    button{
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    border-radius: 5px;
+    }
+    button:hover{
+    opacity: 0.6;
+    }
+    h2{
+    font-size: 1.5-2rem;
+    font-weight: bold;
+    }
+    .name h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap; 
+    }
+    @media (max-width:640px){
+    .card{
+    flex-direction: column;  
+    padding: 5px;  
+    width: 70vw;
+    margin:120px auto; 
+    justify-content: center;
+    align-items: center;  
+    }
+    .buttons{
+    display: flex;    
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;        
+    }
+    img{
+    margin-top: 35px;    
+    width: 95px;
+    height:95px;    
+    }
+    .name{
+    margin-top: 15px;        
+    }
+    button{
+    width: 220px;    
+    }
+    p{
+    display: flex;    
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;       
+    }
+    .contact , .portfolio{
+    display: inline-block;    
+    }
+    }
+    </style>
+</head>
+<body>
+  <div class="card">
+    <div class="img">
+     <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="profile pic">
+     <div class="name">
+      <h2>Riddhima Jaiswal</h2>
+      </div> 
+    </div>
+    <div class="info">
+      <p>Web Designer & JavaScript Enthusiast. Loves clean,creative layouts and good coffee!</p>
+       <div class="buttons">
+        <div class="contact">
+         <button>Contact</button>
+        </div>
+        <div class="portfolio">
+         <button>Portfolio</button>
+        </div>
+       </div>
+    </div> 
+ </div>
+</body>
+</html>
