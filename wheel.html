@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ferris Wheel</title>
     <style>
-.wheel {
+        .wheel {
   border: 2px solid black;
   border-radius: 50%;
   margin-left: 50px;
@@ -95,20 +94,40 @@
     transform: rotate(0deg);
   }
   25% {
-    background-color: yellow;
+    background-color: green;
   }
   50% {
-    background-color: purple;
+    background-color: white;
+  }
+  75%{
+    background-color: green;
   }
   100% {
     transform: rotate(-360deg);
   }
 }
+
+body{
+    display: flex;
+    justify-content: center;
+}
     </style>
-</head>
-<body>
-  <div class="wheel"></div>
-  <div class="line"></div> 
-  <div class="cabin"></div> 
-</body>
+  </head>
+  <body>
+    <div class="wheel">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+
+      <div class="cabin"></div>
+      <div class="cabin"></div>
+      <div class="cabin"></div>
+      <div class="cabin"></div>
+      <div class="cabin"></div>
+      <div class="cabin"></div>
+    </div>
+  </body>
 </html>
